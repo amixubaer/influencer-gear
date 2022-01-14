@@ -1,0 +1,144 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+
+/* Common Part */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Banner */
+.banner {
+  height: calc(100vh - 80px);
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.banner-left {
+  margin-left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.banner-left h1 {
+  font-size: 45px;
+  line-height: 1px;
+}
+.banner-left p {
+  color: #3a3a3a;
+  font-size: 18px;
+  line-height: 1.5px;
+  margin: 20px 0;
+}
+.banner-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.banner-right img {
+  width: 65%;
+  background-image: url(/images/Circle\ design.svg);
+  background-repeat: no-repeat;
+}
+
+.banner-animation {
+  font-size: 60px;
+  white-space: nowrap;
+  position: relative;
+  color: transparent;
+}
+.banner-animation::before {
+  content: "Influencer";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #3a3a3a;
+  animation: typing 3s linear infinite;
+}
+@keyframes typing {
+  0% {
+    content: "I|";
+  }
+  5% {
+    content: "In|";
+  }
+  10% {
+    content: "Inf|";
+  }
+  15% {
+    content: "Infl|";
+  }
+  20% {
+    content: "Influ|";
+  }
+  25% {
+    content: "Influe|";
+  }
+  30% {
+    content: "Influen|";
+  }
+  35% {
+    content: "Influenc|";
+  }
+  40% {
+    content: "Influence|";
+  }
+  45%,
+  88% {
+    content: "Influencer|";
+  }
+  89% {
+    content: "Influence|";
+  }
+  90% {
+    content: "Influenc|";
+  }
+  91% {
+    content: "Influen|";
+  }
+  92% {
+    content: "Influe|";
+  }
+  93% {
+    content: "Influ|";
+  }
+  94% {
+    content: "Infl|";
+  }
+  95% {
+    content: "Inf|";
+  }
+  96% {
+    content: "In|";
+  }
+  97% {
+    content: "I|";
+  }
+  98% {
+    content: "|";
+  }
+  99% {
+    content: "|";
+  }
+  100% {
+    content: "|";
+  }
+}
+
+/* Button */
+.primary-btn {
+  width: 196px;
+  height: 44px;
+  padding: 10px;
+  font-weight: 700;
+  background-color: #e02c6d;
+  color: #ffffff;
+  border: none;
+  border-radius: 41px;
+  cursor: pointer;
+}
+.primary-btn:hover {
+  color: #250724;
+  opacity: 0.8;
+}

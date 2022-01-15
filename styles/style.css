@@ -232,7 +232,7 @@ nav {
   cursor: pointer;
 }
 .collection .collection-banner img {
-  width: 270px;
+  width: 95%;
 }
 .collection-details h3 {
   font-size: 28px;
@@ -403,6 +403,7 @@ footer ul li {
     align-items: center;
   }
   .logos {
+    margin: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -411,7 +412,7 @@ footer ul li {
   .collection {
     margin: 0;
     padding: 0;
-    width: 95%;
+    width: 90%;
   }
   .banner-left,
   .collection,
@@ -430,5 +431,9 @@ footer ul li {
   .collection img {
     width: 329px;
     height: 476px;
+  }
+
+  footer {
+    width: 95vw;
   }
 }

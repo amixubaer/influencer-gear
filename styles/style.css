@@ -218,7 +218,7 @@ nav {
   text-align: center;
 }
 .collections {
-  margin: 0 70px;
+  margin: 0 120px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 24px;
@@ -377,6 +377,7 @@ footer ul li {
   }
   .banner-left p,
   .bottom-right p,
+  .collection-info p,
   .footer-items p {
     text-align: center;
     font-size: 10px;

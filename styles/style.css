@@ -7,7 +7,6 @@ body {
   background-color: #ffffff;
 }
 .container {
-  padding: 30px;
   margin-top: 21px;
   cursor: default;
 }
@@ -349,4 +348,84 @@ footer ul li {
 }
 .footer-text:hover {
   color: #e02c6d;
+}
+
+/* Responsive Media Query */
+
+/* Mobile View */
+@media only screen and (max-width: 688px) {
+  .body,
+  .container {
+    width: 100%;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+  }
+  hr {
+    display: none;
+  }
+  .main {
+    padding: 0;
+    margin: 0;
+  }
+  .banner-left p,
+  .bottom-right p,
+  .footer-items p {
+    text-align: center;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+  .banner-left h1 {
+    font-size: 25px;
+  }
+  .navigation {
+    display: none;
+  }
+  .page-title {
+    align-items: center;
+  }
+  .banner,
+  .header,
+  .collections,
+  .bottom,
+  .pickup,
+  .download {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+  .logo,
+  .collection {
+    margin: 0;
+    padding: 0;
+    width: 95%;
+  }
+  .banner-left,
+  .collection,
+  .banner-right,
+  .bottom-left,
+  .bottom-right {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .banner-right img {
+    background-position: center;
+    background-size: 100%;
+    width: 80%;
+  }
+
+  .collection img {
+    width: 329px;
+    height: 476px;
+  }
 }
